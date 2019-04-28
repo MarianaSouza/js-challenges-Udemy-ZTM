@@ -22,6 +22,7 @@ function sortingArrays(arr) {
             finalArray.push(num);
         }
     });
+
     return finalArray;
 }
 
