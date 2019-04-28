@@ -11,10 +11,10 @@ let ordered = unordered.sort((num1, num2) => {
 function sortingArrays(arr) {
     let finalArray = [];
     let tempArray = []
-    ordered.forEach((num, index) => {
-        if (num === ordered[index + 1]) {
+    arr.forEach((num, index) => {
+        if (num === arr[index + 1]) {
             tempArray.push(num);
-        } else if (num === ordered[index - 1]) {
+        } else if (num === arr[index - 1]) {
             tempArray.push(num);
             finalArray.push(tempArray);
             tempArray = [];
